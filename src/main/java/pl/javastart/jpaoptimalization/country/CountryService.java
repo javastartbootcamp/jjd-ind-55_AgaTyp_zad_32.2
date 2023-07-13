@@ -16,6 +16,7 @@ public class CountryService {
     public List<Country> findAll() {
         return countryRepository.findAll();
     }
+
     public List<CountryWithBiggestCity> findAllWithBiggestCity() {
         List<CountryWithBiggestCity> allWithCities = countryRepository.findAllWithBiggestCity();
         return allWithCities;
